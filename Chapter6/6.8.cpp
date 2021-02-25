@@ -45,7 +45,7 @@ int main() {
         for (int i = 0; i < prime.size() && prime[i] < n; ++i) {
             if (prime[i] % 10 == 1) {
                 isOutput = true;
-                printf("%d ", prime[i]);
+                printf("%d ", prime[i]);    //这样的输出格式，最后一个素数后面也会有空格吧。但是题目要求：最后一个素数后面没有空格欸。不过也Accepted了，为什么呢？
             }
         }
         if (!isOutput) {
